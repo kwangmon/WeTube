@@ -1,4 +1,4 @@
-export const trending = (req, res) => res.render("home"); // globalRouter
+export const trending = (req, res) => res.render("home", { PageTitle: "Home" }); // globalRouter
 export const search = (req, res) => res.send("Search"); // globalRouter
 
 ////////////////////////////////
