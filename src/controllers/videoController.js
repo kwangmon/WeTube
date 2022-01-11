@@ -1,4 +1,11 @@
-export const trending = (req, res) => res.render("home", { PageTitle: "Home" }); // globalRouter
+const fakeUser = {
+    username: "Ahn",
+    loggedIn: true,
+};
+
+
+
+export const trending = (req, res) => res.render("home", { PageTitle: "Home", fakeUser: fakeUser }); // globalRouter
 export const search = (req, res) => res.send("Search"); // globalRouter
 
 ////////////////////////////////
